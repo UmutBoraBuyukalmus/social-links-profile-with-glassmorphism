@@ -1,0 +1,122 @@
+:root {
+  --grey900: hsl(0, 0%, 8%);
+  --grey800: hsl(0, 0%, 12%);
+  --grey700: hsl(0, 0%, 20%);
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* A background image was added to the page. */
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background-image: url("assets/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 96vh;
+}
+
+/* A glassmorphism effect has been added to the card div. */
+
+.card {
+  background: rgba(120, 120, 120, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 12px;
+  display: inline-block;
+  text-align: center;
+  width: 400px;
+}
+
+.card-body {
+  margin: 2.5rem;
+}
+
+.card .profile h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .profile h4 {
+  color: var(--green);
+  font-weight: 700;
+  margin-top: 0.5rem;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .profile p {
+  color: #fff;
+  margin: 2rem 0;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .profile img {
+  width: 27%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.card .links {
+  list-style: none;
+  padding: 0;
+}
+
+/* A glassmorphism effect has been added to the links. */
+
+.card .links .link a {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  color: #fff;
+  font-weight: 700;
+  background: rgba(15, 15, 15, 0.83);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border: 1px solid rgba(65, 65, 65, 0.32);
+  border-radius: 6px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.card .links .link a:hover {
+  background-color: var(--green);
+  color: var(--grey900);
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .card {
+    width: 90vw;
+  }
+  .card-body {
+    margin: 1.5rem;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: var(--green);
+}
